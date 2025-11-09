@@ -23,7 +23,7 @@ endif()
 set(CMAKE_CXX_FLAGS_DEBUG "-g -O0 -DDEBUG")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3 -DNDEBUG")
 
-add_executable(${PROJECT_NAME} WIN32 main.cpp)
+add_executable(${PROJECT_NAME} WIN32 main.cpp ../lsMisc/CommandLineParser.cpp ../lsMisc/UTF16toUTF8.cpp ../lsMisc/UrlEncode.cpp ../lsMisc/stdosd/stdosd.cpp ../lsMisc/stdosd/stdosd_win.cpp)
 
 # ============================================
 # Windows API Libraries
